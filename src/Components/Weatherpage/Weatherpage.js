@@ -35,7 +35,7 @@ function Weatherpage() {
             });
     }, [cityname]);
     if (loading) {
-       // return <div> wait..and  comment if-loading code</div>;
+    return <div> wait..and  comment part of if-loading </div>;
     }
 
     if (error || Object.keys(weatherData).length === 0) {
