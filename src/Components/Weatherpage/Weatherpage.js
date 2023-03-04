@@ -34,14 +34,17 @@ function Weatherpage() {
 
             });
     }, [cityname]);
-    if (loading) {
-    return <div> wait..and  comment part of if-loading </div>;
-    }
 
-    if (error || Object.keys(weatherData).length === 0) {
-        alert("Location Not Found.. !");
-        return (window.location.href = "/");
-    }
+// after uncomment code run successfully
+
+    // if (loading) {
+    //     return <div> wait..and  comment part of if-loading </div>;
+    // }
+
+    // if (error || Object.keys(weatherData).length === 0) {
+    //     alert("Location Not Found.. !");
+    //     return (window.location.href = "/");
+    // }
 
 
 
@@ -52,7 +55,7 @@ function Weatherpage() {
             </h1>
             <div className="checkbox1">
                 <label>
-                    <input  id="input1"
+                    <input id="input1"
                         type="checkbox"
                         name="Celsius"
 
@@ -73,30 +76,49 @@ function Weatherpage() {
 
 
             <div className="data-container">
-                <img
+                {/* <img
                     src={weatherData.current.condition.icon}
                     alt={weatherData.current.condition.text}
-                />
+                /> */}
                 <p>
-                    Location: {weatherData.location.name}
+                    Location:
+                    {/* Location: {weatherData.location.name} */}
 
                 </p>
-                <p>Cloud : {weatherData.current.cloud}</p>
+
+                {/* <p>Cloud : {weatherData.current.cloud}</p> */}
+                <p>Cloud : </p>
                 <p>
+                    Longitude:
+
+                </p>
+
+                {/* <p>
                     Longitude: {weatherData.location.lon}{" "}
                     <span className="lat">Latitude: {weatherData.location.lat}</span>{" "}
+                </p> */}
+
+
+                <p>
+                    Country :
+
                 </p>
+                {/* 
                 <p>
                     Country : {weatherData.location.country}{" "}
                     <span className="region">Region : {weatherData.location.region}</span>{" "}
-                </p>
+                </p> */}
                 <p>
+                    Time_Zone:
+
+                </p>
+                {/* <p>
                     Time_Zone: {weatherData.location.tz_id}{" "}
                     <span>Local Time : {weatherData.location.localtime}</span>{" "}
-                </p>
+                </p> */}
 
-                <p>UV Index : {weatherData.current.uv}</p>
-                <p>Pressure : {weatherData.current.pressure_in}</p>
+                <p>UV Index : </p>
+                {/* <p>UV Index : {weatherData.current.uv}</p> */}
 
             </div>
         </div>
