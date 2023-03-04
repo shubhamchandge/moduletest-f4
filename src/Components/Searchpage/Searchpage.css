@@ -1,0 +1,59 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+
+}
+
+.header {
+    position: absolute;
+    width: 692.27px;
+    height: 144px;
+    left: 518px;
+    top: 101px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 121px;
+    color: #FFFFFF;
+
+}
+
+.search-inputbox {
+    padding-left: 20px;
+    margin-top: 15px;
+    position: absolute;
+    width:85%;
+    height: 72px;
+    left: 146px;
+    top: 302px;
+    border: 1px solid #FFFFFF;
+    background: inherit;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    border-radius: 15px;
+}
+
+button {
+    position: absolute;
+    width: 260.75px;
+    height: 58px;
+    left: 146px;
+    top: 418px;
+    background: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    border-radius: 15px;
+
+}
